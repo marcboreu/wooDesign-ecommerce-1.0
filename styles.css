@@ -1,0 +1,374 @@
+body {
+  background: #ffffff;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+/*-- HEADER --*/
+header {
+  margin: 0px;
+  padding: 0px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url("img/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-size: 0.8rem;
+}
+
+.logo-container {
+  margin: 0px;
+  padding: 2%;
+}
+
+.row-header-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.rowheader {
+  height: 50px;
+  width: auto;
+  display: inline-flex;
+  margin-top: 15px;
+}
+
+.rowheader.logo-container > a > img {
+  width: 18vw;
+  height: auto;
+}
+
+.rowheader.header-main > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.rowheader.header-main > li > a:hover {
+  color: rgb(225, 191, 0);
+}
+
+.rowheader.header-main > li > a {
+  display: flex;
+  align-items: center;
+}
+
+.rowheader.header-main > li > a > img {
+  width: 20px;
+  height: 20px;
+  padding: 0px 5px 0px 10px;
+}
+
+/*-- LANGUAGES & CURRENCY --*/
+header .header-container-selects > li > select {
+  list-style: none;
+  color: white;
+  border: none;
+  background-color: transparent;
+}
+
+header .header-container-selects > li > select:hover {
+  color: rgb(225, 191, 0);
+}
+
+/*-- BARSEARCH --*/
+header > div > nav > div.main > ul {
+  justify-content: center;
+}
+
+.container-search {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40vh;
+}
+
+.container-search form {
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px 15px;
+  padding: 2px;
+}
+
+.container-search form .search {
+  flex-grow: 2;
+  border: none;
+  width: 60vw;
+  height: 40px;
+  padding-left: 30px;
+  background-color: #ebebebb1;
+  border: none;
+  align-items: center;
+}
+
+.container-search form input {
+  color: black;
+}
+
+.container-search form input:focus {
+  outline: none;
+}
+
+.container-search form button {
+  background: rgb(0, 0, 0);
+  color: white;
+}
+
+/*-- NAVBARMAIN --*/
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20vh;
+}
+
+.main > li {
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.main li a {
+  color: white;
+  text-decoration: none;
+  margin: 2px 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-style: bold;
+  list-style: none;
+}
+
+.main li a:hover {
+  color: rgb(225, 191, 0);
+}
+
+.main li ul li {
+  padding: 7px;
+  font-size: 0.8rem;
+}
+
+/*-- hidden submenu --*/
+.main li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+  list-style: none;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.639);
+  text-decoration: none;
+  margin: 2px 10px;
+  padding: 15px 15px;
+  font-size: 0.8rem;
+  font-style: normal;
+}
+
+/*-- submenu activated --*/
+.main li:hover > ul {
+  display: inline-flex;
+}
+
+/*-- BODY --*/
+.section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.row-section div {
+  width: 24vw;
+}
+
+.card.h-100 img {
+  object-fit: cover;
+  width: inherit;
+}
+
+.card-body h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-body .pt-3 p {
+  text-align: justify;
+}
+
+.card-footer.bg-transparent.border-0 > p > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.card-footer.bg-transparent.border-0 > p > a:hover {
+  color: rgb(225, 191, 0);
+}
+
+.row {
+  margin-top: 11px;
+  padding: 7px;
+  display: flex;
+}
+
+/*-- FOOTER --*/
+footer {
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)),
+    url("img/forests.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  clear: both;
+}
+
+.container-footer-all {
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  padding: 1vw 1vh;
+  color: white;
+}
+
+.footer-column1 .footer-column2 .footer-column3 .footer-column4 {
+  margin-left: 25px;
+  max-width: 400px;
+  align-content: center;
+  margin: auto;
+}
+
+.google-map {
+  padding: 10px;
+}
+
+.footer-column1 > a > img {
+  width: 15vw;
+  height: auto;
+  padding: 10px;
+}
+
+.footer-column4 img {
+  width: auto;
+  height: 100px;
+}
+
+.footer-column2 .footer-column3 .footer-column4 {
+  margin-top: 20px;
+}
+
+.footer-column3 .row img {
+  width: 20px;
+  height: 20px;
+}
+
+.container-footer {
+  width: 100%;
+  background-color: #a2a2a256;
+  color: #ffffff;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+
+.container-footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-column1 ul {
+  padding: 10px;
+  padding-inline-start: 10px;
+  list-style: none;
+}
+
+.footer-column2 li {
+  padding: 16px 0px;
+  list-style: none;
+}
+
+.footer-column2 ul {
+  padding-inline-start: 10px !important;
+}
+
+.footer-column2 ul > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  padding-inline-start: 10px;
+}
+
+.footer-column2 ul > li > a:hover {
+  color: rgb(225, 191, 0);
+}
+
+.footer-column3 .row > a > img {
+  padding: 0px 12px 0px 0px;
+}
+
+.footer-column3 .row > a {
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-column3 .row > a:hover {
+  color: rgb(225, 191, 0);
+}
+
+.footer-column1 li {
+  padding: 7px;
+  list-style: none;
+}
+
+.container-footer .legend-footer {
+  align-content: center;
+  margin: auto;
+}
+
+/*--- EXTRA LOGO & INFO MARCBOREU ---*/
+
+.container-logo img {
+  width: 26px;
+  height: auto;
+  display: inline-block;
+  z-index: 100;
+  padding: 0 10px;
+}
+
+.container-logo p {
+  font-weight: 300;
+  display: inline-block;
+  font-family: "Montserrat", bold;
+  margin: 4px 0px;
+}
+
+a.container-logo {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+a.container-logo img {
+  width: 20px;
+}
+
+.container-logo img:hover {
+  transform: rotate(360deg);
+  -webkit-transition: 1.2s ease-in-out;
+  -moz-transition: 1.2s ease-in-out;
+  -o-transition: 1.2s ease-in-out;
+  transition: 1.2s ease-in-out;
+}
